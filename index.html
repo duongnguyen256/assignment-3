@@ -28,7 +28,7 @@
     </aside>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light mb-2">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light mb-5">
       <div class="container justify-content-md-center">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -41,8 +41,10 @@
               ><i class="icon-doc-text-inv"></i>Lý lịch</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="container-img">
             <div class="container">
+              <!-- <p class="name">Nguyễn Hoàng Dương</p>
+              <p class="position">Full Stack Developer</p> -->
               <img src="images/_MG_1654.jpg" alt="avatar" class="img-avatar" />
             </div>
           </li>
@@ -82,7 +84,9 @@
                 <input type="email" id="emailInput" placeholder="Enter Email" />
                 <p id="errorMessage" style="color: red"></p>
                 <p>Hãy nhập Email để xác thực</p>
-                <button onclick="submitEmail()">Submit</button>
+                <button onclick="submitEmail()" class="submit-button">
+                  Submit
+                </button>
               </div>
             </div>
             <div id="personalInfo" class="container hide">
